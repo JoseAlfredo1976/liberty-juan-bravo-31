@@ -1,0 +1,357 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta property="og:title" content="Liberty Club - Dossier de inversion"><meta property="og:description" content="Traspaso discoteca Liberty, Juan Bravo 31, Madrid. 750 m2, aforo 825."><meta property="og:image" content="https://josealfredo1976.github.io/liberty-juan-bravo-31/img/0011-1.jpg"><title>Liberty Juan Bravo 31</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500;1,6..96,700&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: escaparate nocturno - foto a sangre, ficha tecnica tipo contrato, galeria con lightbox, simulador al final */
+:root{
+  --bg:#120a0c;        /* terciopelo casi negro con sesgo burdeos */
+  --panel:#1c1114;
+  --line:#3a2329;
+  --fg:#f3e9e6;
+  --muted:#b49fa2;
+  --neon:#ff2a3d;      /* rojo neon del rotulo */
+  --neon-soft:rgba(255,42,61,.16);
+  --display:"Bodoni Moda","Didot","Times New Roman",serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+a{color:var(--fg)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--neon)}
+section{padding-block:72px;border-top:1px solid var(--line)}
+section h2{font-size:clamp(32px,5vw,52px);line-height:1.05;margin-top:10px}
+p.lead{max-width:62ch;color:var(--muted);font-size:17px}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(18,10,12,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+nav.top img{height:34px;width:auto;filter:invert(1)}
+nav.top ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex-wrap:wrap}
+nav.top a{text-decoration:none;font-size:13px;color:var(--muted);letter-spacing:.04em}
+nav.top a:hover,nav.top a:focus-visible{color:var(--fg)}
+@media (max-width:760px){nav.top ul{display:none}}
+
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;padding-block:56px 64px}
+.hero h1{font-size:clamp(56px,10vw,128px);line-height:.9;font-style:italic;font-weight:700;color:var(--fg)}
+.hero h1 span{color:var(--neon);text-shadow:0 0 18px rgba(255,42,61,.55),0 0 42px rgba(255,42,61,.3)}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--muted);margin:18px 0 26px;max-width:28ch}
+.hero .pic{position:relative;aspect-ratio:3/4;max-width:100%;overflow:hidden;border-radius:2px}
+.hero .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .pic::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px var(--line),inset 0 -120px 80px -40px var(--bg)}
+.hero .tag{position:absolute;left:16px;bottom:14px;z-index:1;font-family:var(--mono);font-size:12px;color:var(--fg);letter-spacing:.08em}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border:1px solid var(--neon);color:var(--fg);text-decoration:none;font-size:14px;letter-spacing:.06em;text-transform:uppercase;background:transparent;cursor:pointer;font-family:var(--body)}
+.btn.solid{background:var(--neon);color:#fff}
+.btn:hover,.btn:focus-visible{box-shadow:0 0 0 3px var(--neon-soft)}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.hero .pic{aspect-ratio:4/3}}
+
+/* ficha */
+.ficha{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);margin-top:36px}
+.ficha div{padding:22px 22px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ficha div:nth-child(3n){border-right:0}
+.ficha div:nth-last-child(-n+3){border-bottom:0}
+.ficha dt{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ficha dd{margin:6px 0 0;font-family:var(--display);font-size:clamp(28px,3.4vw,40px);line-height:1.1;font-variant-numeric:tabular-nums}
+.ficha dd small{font-family:var(--body);font-size:14px;color:var(--muted)}
+.ficha .hl dd{color:var(--neon)}
+@media (max-width:700px){.ficha{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ficha div{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+  .ficha div:nth-child(2n){border-right:0!important}}
+.ratios{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);margin-top:28px;border:1px solid var(--line)}
+.ratios div{background:var(--panel);padding:16px 18px}
+.ratios b{display:block;font-family:var(--mono);font-size:20px;font-weight:500;font-variant-numeric:tabular-nums}
+.ratios span{font-size:13px;color:var(--muted)}
+@media (max-width:760px){.ratios{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.note{font-size:13px;color:var(--muted);margin-top:14px;max-width:80ch}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:30px}
+.split > *{min-width:0}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts li span:first-child{color:var(--muted)}
+.facts li span:last-child{text-align:right}
+.metro{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.metro i{font-style:normal;font-family:var(--mono);font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:20px}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:34px}
+.gal button{padding:0;border:0;background:var(--panel);cursor:zoom-in;aspect-ratio:3/4;overflow:hidden;max-width:100%}
+.gal button:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease,filter .5s ease;filter:saturate(.92)}
+.gal button:hover img,.gal button:focus-visible img{transform:scale(1.04);filter:saturate(1.1)}
+.gal button:focus-visible{outline:2px solid var(--neon);outline-offset:2px}
+@media (max-width:700px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,5,6,.94);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-height:86vh;max-width:100%;object-fit:contain}
+.lb button{position:absolute;background:none;border:1px solid var(--line);color:var(--fg);width:46px;height:46px;font-size:22px;cursor:pointer}
+.lb .x{top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px))}
+.lb .p{left:calc(16px + env(safe-area-inset-left,0px));top:50%}
+.lb .n{right:calc(16px + env(safe-area-inset-right,0px));top:50%}
+.lb .c{position:absolute;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* videos */
+.vids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
+.vids a{text-decoration:none;display:block;border:1px solid var(--line);background:var(--panel)}
+.vids .th{position:relative;aspect-ratio:16/9;overflow:hidden;max-width:100%}
+.vids .th img{width:100%;height:100%;object-fit:cover;display:block;opacity:.8}
+.vids .th::after{content:"";position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:var(--neon);box-shadow:0 0 30px rgba(255,42,61,.6);
+  -webkit-mask:radial-gradient(circle,#000 99%,transparent 100%)}
+.vids .th::before{content:"";position:absolute;left:50%;top:50%;z-index:1;margin:-10px 0 0 -5px;border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.vids .t{padding:14px 16px;font-size:14px}
+.vids .t small{display:block;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.vids .ig .th{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 30%,var(--neon-soft),transparent 60%),var(--panel)}
+.vids .ig .th::after,.vids .ig .th::before{display:none}
+.vids .ig .th b{font-family:var(--display);font-style:italic;font-size:30px}
+@media (max-width:760px){.vids{grid-template-columns:1fr}}
+
+/* simulador */
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:30px}
+.sim > *{min-width:0}
+@media (max-width:860px){.sim{grid-template-columns:1fr}}
+.ctl{margin-bottom:20px}
+.ctl label{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-bottom:6px}
+.ctl label output{font-family:var(--mono);color:var(--fg);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--neon)}
+.res{border:1px solid var(--line);background:var(--panel)}
+.res .row{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid var(--line);font-size:15px}
+.res .row span:last-child{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.res .row.tot{font-size:17px}
+.res .row.tot span:last-child{font-size:22px;color:var(--neon)}
+.res .row:last-child{border-bottom:0}
+.bar{height:10px;background:var(--line);margin:0 18px 16px;position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--neon);transition:width .3s}
+.simflag{margin-top:18px;max-width:80ch;padding:14px 18px;border:1px solid var(--neon);background:var(--neon-soft);font-family:var(--mono);font-size:13px;letter-spacing:.04em;line-height:1.5}
+.warn{font-size:13px;color:var(--muted);border-left:2px solid var(--neon);padding-left:12px;margin-top:18px}
+
+/* checklist */
+.check{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+@media (max-width:760px){.check{grid-template-columns:1fr}}
+.check li{border-bottom:1px solid var(--line)}
+.check label{display:flex;gap:12px;align-items:flex-start;padding:12px 0;cursor:pointer;font-size:15px}
+.check input{accent-color:var(--neon);margin-top:5px;width:16px;height:16px;flex:none}
+.prog{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:16px}
+
+footer{border-top:1px solid var(--line);padding-block:40px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.contact{font-family:var(--display);font-size:clamp(26px,3vw,36px);color:var(--fg);margin-top:8px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+
+<nav class="top">
+  <div class="wrap">
+    <img src="img/logo.png" alt="Liberty">
+    <ul>
+      <li><a href="#operacion">Operacion</a></li>
+      <li><a href="#local">El local</a></li>
+      <li><a href="#escaparate">Escaparate</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#simulador">Simulacion</a></li>
+      <li><a href="#due-diligence">Due diligence</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <div class="eyebrow">Dossier de inversion - Traspaso</div>
+    <h1>Liberty <span>Club</span></h1>
+    <p class="sub">Discoteca premium en pleno Barrio de Salamanca. Juan Bravo 31, Madrid.</p>
+    <div class="btns">
+      <a class="btn solid" href="#operacion">Ver la operacion</a>
+      <a class="btn" href="#escaparate">Ver el local</a>
+    </div>
+  </div>
+  <div class="pic">
+    <img src="img/0011-1.jpg" alt="Pista principal de Liberty llena bajo luces rojas">
+    <div class="tag">SALA PRINCIPAL - SABADO</div>
+  </div>
+</header>
+
+<section id="operacion">
+  <div class="wrap">
+    <div class="eyebrow">La operacion</div>
+    <h2>Ficha del traspaso</h2>
+    <dl class="ficha">
+      <div class="hl"><dt>Traspaso</dt><dd>2,5 M&euro;</dd></div>
+      <div><dt>Alquiler mensual</dt><dd>35.000 &euro; <small>+ IVA</small></dd></div>
+      <div><dt>Contrato restante</dt><dd>~13 <small>anos</small></dd></div>
+      <div><dt>Superficie</dt><dd>750 <small>m&sup2;</small></dd></div>
+      <div><dt>Aforo autorizado</dt><dd>825 <small>personas</small></dd></div>
+      <div><dt>Ubicacion</dt><dd style="font-size:clamp(22px,2.6vw,30px)">Juan Bravo 31 <small>28006 Madrid</small></dd></div>
+    </dl>
+    <div class="ratios">
+      <div><b>420.000 &euro;</b><span>Alquiler anual (sin IVA)</span></div>
+      <div><b>46,7 &euro;/m&sup2;</b><span>Renta mensual por m&sup2;</span></div>
+      <div><b>3.333 &euro;/m&sup2;</b><span>Traspaso por m&sup2;</span></div>
+      <div><b>3.030 &euro;</b><span>Traspaso por plaza de aforo</span></div>
+    </div>
+    <p class="note">Ratios calculados a partir de los datos de la operacion. Amortizando el traspaso a 13 anos (192.308 &euro;/ano), el coste fijo de local es de unos 612.000 &euro;/ano antes de IVA, personal y explotacion.</p>
+  </div>
+</section>
+
+<section id="local">
+  <div class="wrap">
+    <div class="eyebrow">El negocio</div>
+    <h2>Un club en marcha, con marca y publico propios</h2>
+    <div class="split">
+      <div>
+        <p class="lead">Liberty se presenta como "mas que una discoteca": un club selectivo con puerta, dress code y servicio de mesas VIP, en una de las calles de ocio nocturno mas consolidadas del barrio de Salamanca. Publico local e internacional, con el sabado como noche mas fuerte.</p>
+        <p class="lead">El traspaso incluye un local de 750 m&sup2; con licencia para 825 personas, una marca ya posicionada en las plataformas de reservas de Madrid y una comunidad de unos 20.000 seguidores en Instagram.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Apertura</span><span>Jueves a sabado, 00:00 - 05:30</span></li>
+        <li><span>Musica</span><span>Reggaeton, house y comercial</span></li>
+        <li><span>Copa estandar</span><span>14 - 18 &euro;</span></li>
+        <li><span>Mesa VIP</span><span>desde 250 - 300 &euro;</span></li>
+        <li><span>Acceso</span><span>+18, dress code</span></li>
+        <li><span>Instagram</span><span>@libertysupperclub - ~20K</span></li>
+        <li><span>Transporte</span><span>
+          <div class="metro"><i>Nunez de Balboa L5 L9</i><i>Diego de Leon L4 L5 L6</i></div></span></li>
+      </ul>
+    </div>
+    <p class="note">Fuentes publicas: libertyclubmadrid.com, madridlux.com, clubbable.com, Instagram. Precios orientativos publicados por plataformas de reservas, a confirmar con la propiedad.</p>
+  </div>
+</section>
+
+<section id="escaparate">
+  <div class="wrap">
+    <div class="eyebrow">Escaparate</div>
+    <h2>Asi es una noche en Liberty</h2>
+    <div class="gal" id="gal"></div>
+    <p class="note">Fotografias de la web oficial del club. Pulsa cualquier imagen para verla a pantalla completa.</p>
+  </div>
+</section>
+
+<section id="videos">
+  <div class="wrap">
+    <div class="eyebrow">En movimiento</div>
+    <h2>Videos y redes</h2>
+    <div class="vids">
+      <a href="https://www.youtube.com/watch?v=17CMb66Em5Q" target="_blank" rel="noopener">
+        <div class="th"><img src="img/yt1.jpg" alt=""></div>
+        <div class="t"><small>YouTube</small>Liberty Supper Club - fiesta latina</div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=Txpy0Dwehqk" target="_blank" rel="noopener">
+        <div class="th"><img src="img/yt2.jpg" alt=""></div>
+        <div class="t"><small>YouTube</small>Karnival with Karlo en Liberty</div>
+      </a>
+      <a class="ig" href="https://www.instagram.com/libertysupperclub/" target="_blank" rel="noopener">
+        <div class="th"><b>@libertysupperclub</b></div>
+        <div class="t"><small>Instagram</small>Reels y stories de cada noche, ~20K seguidores</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="simulador">
+  <div class="wrap">
+    <div class="eyebrow">Simulacion</div>
+    <h2>Simulacion de explotacion</h2>
+    <div class="simflag">SIMULACION HIPOTETICA - Ninguna cifra de este bloque es un dato real de Liberty. Son supuestos de ejemplo para jugar con escenarios.</div>
+    <p class="lead">Mueve las hipotesis para ver el orden de magnitud. Las cifras reales de facturacion y costes se facilitaran en la fase de due diligence.</p>
+    <div class="sim">
+      <div>
+        <div class="ctl"><label for="noches">Noches abiertas al ano <output id="o-noches"></output></label><input type="range" id="noches" min="100" max="200" step="1" value="150"></div>
+        <div class="ctl"><label for="ocup">Ocupacion media sobre aforo (825) <output id="o-ocup"></output></label><input type="range" id="ocup" min="20" max="100" step="1" value="55"></div>
+        <div class="ctl"><label for="ticket">Gasto medio por cliente (entrada + barra) <output id="o-ticket"></output></label><input type="range" id="ticket" min="15" max="80" step="1" value="35"></div>
+        <div class="ctl"><label for="vip">Mesas VIP vendidas por noche <output id="o-vip"></output></label><input type="range" id="vip" min="0" max="40" step="1" value="12"></div>
+        <div class="ctl"><label for="vipt">Ticket medio por mesa VIP <output id="o-vipt"></output></label><input type="range" id="vipt" min="250" max="1500" step="50" value="500"></div>
+        <div class="ctl"><label for="var">Costes de explotacion (% sobre ventas) <output id="o-var"></output></label><input type="range" id="var" min="30" max="80" step="1" value="50"></div>
+      </div>
+      <div>
+        <div class="res">
+          <div class="row" style="background:var(--neon-soft);font-family:var(--mono);font-size:12px;letter-spacing:.12em"><span>RESULTADO SIMULADO</span><span>NO SON DATOS REALES</span></div>
+          <div class="row"><span>Ventas anuales (simuladas)</span><span id="r-ventas"></span></div>
+          <div class="row"><span>Costes de explotacion</span><span id="r-var"></span></div>
+          <div class="row"><span>Alquiler (12 x 35.000)</span><span>-420.000 &euro;</span></div>
+          <div class="row tot"><span>EBITDA simulado</span><span id="r-ebitda"></span></div>
+          <div class="row"><span>Amortizacion traspaso (13 anos)</span><span>-192.308 &euro;</span></div>
+          <div class="row"><span>Ano de recuperacion del traspaso</span><span id="r-payback"></span></div>
+        </div>
+        <div style="margin-top:14px;font-size:13px;color:var(--muted)">Margen EBITDA sobre ventas</div>
+        <div class="bar" style="margin:6px 0 0"><i id="r-bar"></i></div>
+        <p class="warn">Simulacion orientativa con IVA excluido. Para una valoracion seria hay que sustituir estas hipotesis por las cuentas reales de los ultimos 3 ejercicios (ver due diligence).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="due-diligence">
+  <div class="wrap">
+    <div class="eyebrow">Siguiente paso</div>
+    <h2>Documentacion a solicitar</h2>
+    <p class="lead">Lista de comprobacion para el inversor. Las casillas se guardan en tu navegador.</p>
+    <ul class="check" id="check"></ul>
+    <div class="prog" id="prog"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Contacto para la operacion</div>
+      <div class="contact">Antonio Gafforio</div>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px">
+        <span style="font-family:var(--mono);font-size:20px;color:var(--fg);user-select:all">609 110 381</span>
+        <a class="btn solid" href="https://wa.me/34609110381" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div style="max-width:52ch">Documento informativo sin valor contractual. Datos de la operacion facilitados por la parte vendedora; informacion del negocio obtenida de fuentes publicas. Imagenes: libertyclubmadrid.com. Noviembre 2026.</div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Galeria">
+  <img id="lb-img" alt="">
+  <button class="x" id="lb-x" aria-label="Cerrar">&times;</button>
+  <button class="p" id="lb-p" aria-label="Anterior">&lsaquo;</button>
+  <button class="n" id="lb-n" aria-label="Siguiente">&rsaquo;</button>
+  <div class="c" id="lb-c"></div>
+</div>
+
+<script>
+const fotos=[
+ ["0012-1","Botellas y ambiente en la barra"],["0010-1","Clientela en sala"],["0013-1","Pista y zona de reservados"],
+ ["001-1","Ambiente de pista"],["0014-1","Fiesta en la pista principal"],["0003","Servicio de botellas Moet"],
+ ["008-1","Publico en la zona VIP"],["009-1","Servicio de mesa con hielo y botellas"],["0011-1","Vista general de la sala"]
+];
+const gal=document.getElementById('gal');
+fotos.forEach(([f,alt],i)=>{const b=document.createElement('button');b.type='button';b.innerHTML=`<img src="img/${f}.jpg" alt="${alt}" loading="lazy">`;b.onclick=()=>openLb(i);gal.appendChild(b)});
+const lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-c');let cur=0;
+function openLb(i){cur=(i+fotos.length)%fotos.length;li.src=`img/${fotos[cur][0]}.jpg`;li.alt=fotos[cur][1];lc.textContent=`${cur+1} / ${fotos.length} - ${fotos[cur][1]}`;lb.hidden=false;document.getElementById('lb-x').focus()}
+document.getElementById('lb-x').onclick=()=>lb.hidden=true;
+document.getElementById('lb-p').onclick=()=>openLb(cur-1);
+document.getElementById('lb-n').onclick=()=>openLb(cur+1);
+lb.addEventListener('click',e=>{if(e.target===lb)lb.hidden=true});
+document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')openLb(cur-1);if(e.key==='ArrowRight')openLb(cur+1)});
+
+const eur=n=>(n<0?'-':'')+Math.round(Math.abs(n)).toLocaleString('es-ES')+' €';
+const $=id=>document.getElementById(id);
+function calc(){
+  const noches=+$('noches').value,ocup=+$('ocup').value,ticket=+$('ticket').value,vip=+$('vip').value,vipt=+$('vipt').value,pv=+$('var').value;
+  $('o-noches').textContent=noches;$('o-ocup').textContent=ocup+'% ('+Math.round(825*ocup/100)+' pers.)';
+  $('o-ticket').textContent=ticket+' €';$('o-vip').textContent=vip;$('o-vipt').textContent=vipt+' €';$('o-var').textContent=pv+'%';
+  const ventas=noches*(825*ocup/100*ticket+vip*vipt);
+  const costes=ventas*pv/100;const ebitda=ventas-costes-420000;
+  $('r-ventas').textContent=eur(ventas);$('r-var').textContent=eur(-costes);$('r-ebitda').textContent=eur(ebitda);
+  $('r-payback').textContent=ebitda>0?(2500000/ebitda).toLocaleString('es-ES',{maximumFractionDigits:1})+' anos':'No recupera';
+  $('r-bar').style.width=Math.max(0,Math.min(100,ebitda/ventas*100))+'%';
+}
+['noches','ocup','ticket','vip','vipt','var'].forEach(id=>$(id).addEventListener('input',calc));calc();
+
+const docs=["Cuentas anuales y P&L de los 3 ultimos ejercicios","Contrato de arrendamiento completo y clausulas de cesion","Licencia de actividad y aforo de 825 personas","Inventario de instalaciones, sonido e iluminacion","Plantilla, contratos y convenio aplicable","Deudas con Hacienda, Seguridad Social y proveedores","Expedientes, denuncias o sanciones municipales","Certificados de insonorizacion y mediciones acusticas","Propiedad de la marca Liberty y redes sociales","Contratos con promotores, DJs y proveedores de bebida"];
+let st={};try{st=JSON.parse(localStorage.getItem('liberty-dd')||'{}')}catch(e){}
+const ul=$('check');
+docs.forEach((d,i)=>{const li=document.createElement('li');li.innerHTML=`<label for="dd${i}"><input type="checkbox" id="dd${i}" ${st[i]?'checked':''}><span>${d}</span></label>`;ul.appendChild(li);
+  li.querySelector('input').addEventListener('change',e=>{st[i]=e.target.checked;try{localStorage.setItem('liberty-dd',JSON.stringify(st))}catch(_){}prog()})});
+function prog(){const n=docs.filter((_,i)=>st[i]).length;$('prog').textContent=`${n} de ${docs.length} documentos recibidos`}prog();
+</script>
+</body></html>
